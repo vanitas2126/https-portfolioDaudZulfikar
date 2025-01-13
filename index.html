@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daud Zulfikar | Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="profile-container">
+            <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Daud Zulfikar Profile" class="profile-img">
+            <h1 class="name">Daud Zulfikar</h1>
+            <p class="job-title">Full Stack Developer</p>
+            <div class="social-links">
+                <a href="https://github.com/vanitas2126" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/daud-zulfikar-24325025b" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/vng21.26/" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Passionate Full Stack Developer with expertise in building scalable web applications. Experienced in both frontend and backend development.</p>
+            <div class="skills">
+                <h3>Skills</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>Flask</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>SQL</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2>Education</h2>
+        <div class="education-timeline">
+            <div class="education-item">
+                <div class="year">2021 - 2024</div>
+                <h3>Teknik Komputer dan Jaringan</h3>
+                <p>SMKN 1 Puncak Cisarua</p>
+                <p>Score: 88.00</p>
+                <ul>
+                    <li>Academic Achievement Winner of Nasional Biologi 2022</li>
+                </ul>
+            </div>
+            <div class="education-item">
+                <div class="year">2024 - Present</div>
+                <h3>Informatics Engineering</h3>
+                <p>UNIVERSITAS BINANIAGA INDONESIA</p>
+                <p>GPA: 3.8</p>
+                <ul>
+                    <li>Bismillah Hackathon Champion</li>
+                </ul>
+            </div>
+            <div class="education-item">
+                <div class="year">2021</div>
+                <h3>Full Stack Development Bootcamp</h3>
+                <p>Coding Academy</p>
+                <p>Completed intensive coding project</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="{{ url_for('static', filename='images/project1.png') }}" alt="E-Commerce Platform">
+                <h3>E-Commerce Platform</h3>
+                <p>Full-stack e-commerce solution with payment integration</p>
+                <div class="project-tech">
+                    <span>Flask</span>
+                    <span>MongoDB</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="{{ url_for('static', filename='images/project2.png') }}" alt="Electronics Store App">
+                <h3>Electronics Store App</h3>
+                <p>An electronics store offering a wide variety of electronic products for daily use</p>
+                <div class="project-tech">
+                    <span>Flask</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn">Live Demo</a>
+                    <a href="#" class="btn">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+                <div><i class="fas fa-envelope"></i> daudzulfikar7@gmail.com</div>
+                <div><i class="fas fa-phone"></i> +6289521541949</div>
+                <div><i class="fas fa-location-dot"></i> Bogor, West Java, INDONESIA</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Daud Zulfikar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
